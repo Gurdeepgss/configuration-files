@@ -2,7 +2,8 @@
     "globals" : 
     {
         "alwaysShowTabs" : true,
-        "defaultProfile" : "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+		"defaultProfile" : "{2c4de342-38b7-51cf-b940-2309a097f518}",
+
         "initialCols" : 120,
         "initialRows" : 30,
         "keybindings" : 
@@ -11,7 +12,7 @@
                 "command" : "closeTab",
                 "keys" : 
                 [
-                    "ctrl+w"
+                    "ctrl+alt+w"
                 ]
             },
             {
@@ -245,7 +246,7 @@
             "acrylicOpacity" : 0.5,
             "background" : "#191919",
             "closeOnExit" : true,
-            "colorScheme" : "Campbell",
+            "colorScheme" : "draculaManuallyConvertedForWSLUbuntu",
             "commandline" : "wsl.exe -d Ubuntu",
             "cursorColor" : "#FFFFFF",
             "cursorShape" : "filledBox",
@@ -255,7 +256,7 @@
             "historySize" : 9001,
             "icon" : "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
             "name" : "Ubuntu",
-            "padding" : "0, 0, 0, 0",
+            "padding" : "1, 0, 0, 0",
             "snapOnInput" : true,
             "startingDirectory" : "%USERPROFILE%",
             "useAcrylic" : false
@@ -367,6 +368,27 @@
             "red" : "#DC322F",
             "white" : "#EEE8D5",
             "yellow" : "#B58900"
+        },
+        {
+            "background" : "#131313",
+            "black" : "#191919",
+            "blue" : "#7F7FFF",
+            "brightBlack" : "#BFBFBF",
+            "brightBlue" : "#FFFFFF",
+            "brightCyan" : "#81908F",
+            "brightGreen" : "#465A61",
+            "brightPurple" : "#5856B9",
+            "brightRed" : "#FF3232",
+            "brightWhite" : "#FCF4DC",
+            "brightYellow" : "#52676F",
+            "cyan" : "#259185",
+            "foreground" : "#999999",
+            "green" : "#CCCCCC",
+            "name" : "draculaManuallyConvertedForWSLUbuntu",
+            "purple" : "#C61B6E",
+            "red" : "#D01B24",
+            "white" : "#999999",
+            "yellow" : "#A57705"
         }
     ]
 }
