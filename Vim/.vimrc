@@ -13,8 +13,8 @@ set timeoutlen=1000 ttimeoutlen=0
 " setting text width for automatic word wrapping
 set textwidth=90
 "
-"This will set tabstops every 4 spaces and set the shiftwidth (that amount you indent) as 4 spaces also to match your tabstops.
-set ts=4 sw=4
+"This will set tabstops every 2 spaces and set the shiftwidth (that amount you indent) as 2 spaces also to match your tabstops.
+set ts=2 sw=2
 
 " enabling utf-8 encoding
 set encoding=utf-8
@@ -25,6 +25,10 @@ set encoding=utf-8
 
 " split below the new split
 set splitbelow
+
+" folding rules
+set foldmethod=indent
+set foldnestmax=3
 
 " Mapping Keys
 "------------------------------------------------------------------------------
@@ -122,6 +126,8 @@ Plugin 'w0rp/ale'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'OmniSharp/Omnisharp-vim'
 
+Plugin 'vim-scripts/BufOnly.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -202,7 +208,7 @@ set previewheight=5
 
 " Ale is installed
 " Tell ALE to use OmniSharp for linting C# files, and no other linters.
-"let g:ale_linters = { 'cs': ['OmniSharp'] }
+let g:ale_linters = { 'cs': ['OmniSharp'] }
 "
 " Syntastic not installed
 " Enable syntastic integration
@@ -266,3 +272,5 @@ nnoremap <Leader>sp :OmniSharpStopServer<CR>
 "------------------------------------------------------------------------------
 
 "---------------------------------------------------------------------------------------------------------------
+"
+colo dracula
