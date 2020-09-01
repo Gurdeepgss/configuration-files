@@ -1,25 +1,29 @@
-# POWERLEVEL9K Configuration
-#---------------------------------------------------------------------------------------#
-# for it's installation it has to be on top of zshrc
-POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
-# directory shorten strategy
-# Default is truncation from left
-POWERLEVEL9K_SHORTEN_STRATEGY=Default
-# shorten the prompt length to 2 directories
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
-
-#---------------------------------------------------------------------------------------#
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # this did not work in WSL, antigen bundle vi-mode did
 # Vi-mode is ZSH shell
-#set -o vi
+set -o vi
 #bindkey -v
 
 export KEYTIMEOUT=1
+
+#set gnome-terminal for gogh(color Schemes for terminal) to function
+export TERMINAL="gnome-terminal"
+
+#POWERLINE_CONFIG_COMMAND for Powerline working with Tmux
+#export POWERLINE_CONFIG_COMMAND="~/.tmux/plugins/powerline/powerline/bindings/tmux/powerline.conf"
+export LANG=en_IN.UTF-8
+export LC_CTYPE=en_IN.UTF-8
+export LC_ALL=en_IN.UTF-8
 
 # Enable 256 colors in terminal
 export TERM="xterm-256color"
@@ -96,16 +100,11 @@ antigen bundle git
 antigen bundle vi-mode
 antigen bundle git-prompt
 antigen bundle command-not-found
-antigen theme bhilburn/powerlevel9k powerlevel9k
-# antigen bundle heroku
-# antigen bundle pip
-# antigen bundle lein
+antigen theme romkatv/powerlevel10k
+antigen bundle zsh-users/zsh-autosuggestions
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
-
-# Load the theme.
-antigen theme agnoster
 
 # Tell Antigen that you're done.
 antigen apply
@@ -118,3 +117,6 @@ alias cls='clear'
 alias csharp='~/Programming/cSharp-programs/'
 alias tmux='tmux -u'
 #---------------------------------------------------------------------------------------#
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
