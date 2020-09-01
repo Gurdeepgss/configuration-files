@@ -13,8 +13,8 @@ set timeoutlen=1000 ttimeoutlen=0
 " setting text width for automatic word wrapping
 set textwidth=90
 "
-"This will set tabstops every 2 spaces and set the shiftwidth (that amount you indent) as 2 spaces also to match your tabstops.
-set ts=2 sw=2
+"This will set tabstops every 4 spaces and set the shiftwidth (that amount you indent) as 4 spaces also to match your tabstops.
+set ts=4 sw=4
 
 " enabling utf-8 encoding
 set encoding=utf-8
@@ -43,7 +43,7 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader>N :NERDTree<CR>
 
 " key mapping for vertical terminal
-nnoremap <leader>t :vert term<CR>
+nnoremap <leader>t :term ++rows=13<CR>
 "------------------------------------------------------------------------------
 
 " Macros
@@ -105,7 +105,8 @@ Plugin 'https://github.com/scrooloose/nerdtree'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 
 " ctrlP: a fuzzy file finder
-Plugin 'https://github.com/kien/ctrlp.vim'
+"kien/ctrlp.vim is deprecated: Plugin 'https://github.com/kien/ctrlp.vim'
+Plugin 'https://github.com/ctrlpvim/ctrlp.vim'
 
 " Dark dracula theme for vim
 Plugin 'dracula/vim'
@@ -123,10 +124,16 @@ Plugin 'vim-airline/vim-airline-themes'
 " Ctrl-P is already installed, rest are installed below
 Plugin 'tpope/vim-dispatch'
 Plugin 'w0rp/ale'
-Plugin 'vim-syntastic/syntastic'
+" Plugin 'vim-syntastic/syntastic'
 Plugin 'OmniSharp/Omnisharp-vim'
 
 Plugin 'vim-scripts/BufOnly.vim'
+
+Plugin 'OrangeT/vim-csharp'
+
+Plugin 'altercation/vim-colors-solarized'
+
+Plugin 'https://github.com/ryanoasis/vim-devicons'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -171,8 +178,8 @@ let vim_markdown_toggle=2
 
 " Vim Airline Configuration
 "------------------------------------------------------------------------------
-let g:airline_theme='base16_chalk'
-"let g:airline_theme='base16_bright'
+"let g:airline_theme='base16_chalk'
+let g:airline_theme='angr'
 "let g:airline_theme='base16_atelierdune'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -210,9 +217,9 @@ set previewheight=5
 " Tell ALE to use OmniSharp for linting C# files, and no other linters.
 let g:ale_linters = { 'cs': ['OmniSharp'] }
 "
-" Syntastic not installed
+" If you dont't have Ale, use syntastic
 " Enable syntastic integration
-let g:syntastic_cs_checkers = ['code_checker']
+"let g:syntastic_cs_checkers = ['code_checker']
 
 " Update semantic highlighting on BufEnter and InsertLeave
 let g:OmniSharp_highlight_types = 2
@@ -274,3 +281,5 @@ nnoremap <Leader>sp :OmniSharpStopServer<CR>
 "---------------------------------------------------------------------------------------------------------------
 "
 colo dracula
+"set background=dark
+"colo solarized
