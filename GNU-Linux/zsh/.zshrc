@@ -25,9 +25,9 @@ export TERMINAL="gnome-terminal"
 
 #POWERLINE_CONFIG_COMMAND for Powerline working with Tmux
 #export POWERLINE_CONFIG_COMMAND="~/.tmux/plugins/powerline/powerline/bindings/tmux/powerline.conf"
-export LANG=en_IN.UTF-8
-export LC_CTYPE=en_IN.UTF-8
-export LC_ALL=en_IN.UTF-8
+export LANG=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 # Enable 256 colors in terminal
 export TERM="xterm-256color"
