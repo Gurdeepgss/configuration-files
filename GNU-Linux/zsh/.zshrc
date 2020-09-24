@@ -119,6 +119,13 @@ antigen apply
 #---------------------------------------------------------------------------------------#
 alias cls='clear'
 alias tmux='tmux -u'
+
+# below comment is from https://classic.yarnpkg.com/en/docs/install/#debian-stable .
+# Due to the use of nodejs instead of node name in some distros, yarn might complain about
+# node not being installed. A workaround for this is to add an alias in your .bashrc file,
+# like so: alias node=nodejs. This will point yarn to whatever version of node you decide
+# to use.
+alias node=nodejs
 #---------------------------------------------------------------------------------------#
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
