@@ -8,6 +8,10 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+# add sqlcmd for mssql-server to path
+export PATH=$PATH:/opt/mssql-tools/bin
+# add yarn to path
+export PATH="$PATH:/opt/yarn-1.22.5/bin"
 
 # this did not work in WSL, antigen bundle vi-mode did
 # Vi-mode is ZSH shell
