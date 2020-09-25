@@ -27,6 +27,9 @@ set encoding=utf-8
 " opens up quick suggestions menu for command mode
 set wildmenu
 
+" allow switching to other buffers even if current buffer has some non-saved changes
+set hidden
+
 " split below the new split
 set splitbelow
 
