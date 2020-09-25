@@ -59,9 +59,6 @@ let mapleader = "\<Space>"
 " key mappings for NERDTree
 nnoremap <leader>n :NERDTreeToggle<CR>
 
-" key mappings for NERDTree
-nnoremap <leader>N :NERDTree<CR>
-
 " key mapping for vertical terminal
 nnoremap <leader>t :term ++rows=13<CR>
 "------------------------------------------------------------------------------
