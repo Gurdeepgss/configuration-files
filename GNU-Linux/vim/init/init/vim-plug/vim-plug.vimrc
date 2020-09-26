@@ -82,9 +82,6 @@ Plug 'https://github.com/ryanoasis/vim-devicons'
 "Tmux like zoom for Vim
 Plug 'https://github.com/dhruvasagar/vim-zoom'
 
-" easy motion across a line
-Plug 'https://github.com/unblevable/quick-scope'
-
 " smooth scroll for vim
 " check if it even makes any difference on this machinke
 "Plug 'psliwka/vim-smoothie'

@@ -16,7 +16,6 @@ source $HOME/.vim/init/plugins-conf/autocomplete/coc/coc.vimrc 		" coc (Conquer 
 source $HOME/.vim/init/plugins-conf/nerdtree/nerdtree.vimrc 		" NERDTree
 source $HOME/.vim/init/plugins-conf/markdown-preview/markdown-preview.nvim.vimrc " markdown-preview.nvim
 source $HOME/.vim/init/plugins-conf/vim-markdown-toc/vim-markdown-toc.vimrc 	 " markdown-toc (Table of Contents)
-source $HOME/.vim/init/plugins-conf/quick-scope/quick-scope.vimrc 	" QuickScope
 
 " ColorSchemes
 source $HOME/.vim/init/vim-themes/vim-themes.vimrc
